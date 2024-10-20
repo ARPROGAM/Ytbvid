@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical YouTube Video Layout with Autoplay and Loop</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .video-container {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            background-color: #fff;
+            padding: 10px;
+            margin: 20px 0;
+            border-radius: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Video 1 (Top) -->
+    <div class="video-container">
+        <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/W64_T7RLbMo?autoplay=1&loop=1&playlist=W64_T7RLbMo" 
+                frameborder="0" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen>
+        </iframe>
+        <p>Video 1 (Top)</p>
+    </div>
+
+    <!-- Video 2 (Middle) -->
+    <div class="video-container">
+        <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/nSmPoqZNt_I?autoplay=1&loop=1&playlist=nSmPoqZNt_I" 
+                frameborder="0" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen>
+        </iframe>
+        <p>Video 2 (Middle)</p>
+    </div>
+
+    <!-- Video 3 (Bottom) -->
+    <div class="video-container">
+        <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/lGI0UfTzYbE?autoplay=1&loop=1&playlist=lGI0UfTzYbE" 
+                frameborder="0" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen>
+        </iframe>
+        <p>Video 3 (Bottom)</p>
+    </div>
+
+</body>
+</html>
